@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: rgb(135, 125, 36);
+  background: linear-gradient(to left, #20998f, #4d3c8a);
+}
+.container {
+  background-color: rgb(228, 229, 234);
+  width: 500px;
+  padding: 3rem;
+  margin: 100px auto;
+  border-radius: 11px;
+  box-shadow: 0 20px 35px rgba(red, green, blue, alpha);
+}
+
+form {
+  margin: 0 2rem;
+}
+.form-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  color: inherit;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+  padding-left: 1.5rem;
+  font-size: 15px;
+}
+
+.input-group {
+  padding: 1% 0;
+  position: relative;
+}
+.input-group i {
+  position: absolute;
+  color: black;
+}
+
+input:focus {
+  background-color: transparent;
+  outline: transparent;
+  border-bottom: 2px solid hsl(327, 90%, 20%);
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+label {
+  color: #757575;
+  position: relative;
+  left: 1.2em;
+  top: -1.3em;
+  cursor: auto;
+  transition: 0.5s ease all;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -3em;
+  color: hsl(326, 96%, 10%);
+  font: 15px;
+}
+.Recover {
+  text-align: right;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Recover a {
+  text-decoration: none;
+  color: rgb(123, 123, 221);
+}
+.Recover a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.btn {
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  background-color: rgb(125, 125, 235);
+  color: whitesmoke;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+.btn:hover {
+  background-color: #07001f;
+}
+.or {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+.icons i {
+  color: rgb(125, 125, 235);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 3px solid #c5cbd2;
+  margin: 0 15px;
+  transition: 1s;
+}
+.icons i:hover {
+  background-color: #07001f;
+  font-size: 1.6rem;
+  border: 2px solid rgb(125, 125, 235);
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4rem;
+  margin-top: 0.9rem;
+  font-weight: bold;
+}
+
+button {
+  color: rgb(123, 123, 221);
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  text-decoration: underline;
+  color: blue;
+}
