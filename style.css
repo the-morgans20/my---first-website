@@ -2,150 +2,109 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 body {
-  background-color: rgb(135, 125, 36);
-  background: linear-gradient(to left, #20998f, #4d3c8a);
-}
-.container {
-  background-color: rgb(228, 229, 234);
-  width: 500px;
-  padding: 3rem;
-  margin: 100px auto;
-  border-radius: 11px;
-  box-shadow: 0 20px 35px rgba(red, green, blue, alpha);
+  background-color: hsl(60, 1%, 65%);
 }
 
-form {
-  margin: 0 2rem;
-}
-.form-title {
+header {
   text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 1.5rem;
-  margin-bottom: 0.8rem;
+  padding: 50px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #e5e5a3;
 }
 
-input {
-  color: inherit;
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #757575;
-  padding-left: 1.5rem;
-  font-size: 15px;
+nav {
+  word-spacing: 50px;
+  text-align: center;
+  padding: 10px;
 }
-
-.input-group {
-  padding: 1% 0;
-  position: relative;
+header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-bottom: 6px;
 }
-.input-group i {
-  position: absolute;
-  color: black;
-}
-
-input:focus {
-  background-color: transparent;
-  outline: transparent;
-  border-bottom: 2px solid hsl(327, 90%, 20%);
-}
-
-input::placeholder {
-  color: transparent;
-}
-
-label {
-  color: #757575;
-  position: relative;
-  left: 1.2em;
-  top: -1.3em;
-  cursor: auto;
-  transition: 0.5s ease all;
-}
-
-input:focus ~ label,
-input:not(:placeholder-shown) ~ label {
-  top: -3em;
-  color: hsl(326, 96%, 10%);
-  font: 15px;
-}
-.Recover {
-  text-align: right;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.Recover a {
+nav a {
+  color: rgb(81, 95, 175);
   text-decoration: none;
-  color: rgb(123, 123, 221);
 }
-.Recover a:hover {
+nav :hover {
   color: blue;
   text-decoration: underline;
 }
-
-.btn {
-  font-size: 1.1rem;
-  padding: 8px 0;
-  border-radius: 5px;
-  outline: none;
-  width: 100%;
-  background-color: rgb(125, 125, 235);
-  color: whitesmoke;
-  cursor: pointer;
-  transition: 0.9s;
+nav i {
+  margin: 5px;
+  font-size: large;
+}
+.post-text-box sites {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 70px;
+  padding: 10px;
 }
 
-.btn:hover {
-  background-color: #07001f;
+.post-text-box h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  text-transform: capitalize;
 }
-.or {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+.post-text-box h2 {
+  font-family: Verdana;
+  padding-left: 25px;
+  text-align: justify;
+}
+.post-text-box p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 10px;
+}
+
+.profile {
+  float: right;
+  padding: 30px;
+  background-color: #f9f9f9;
+  width: 500px;
+  border: 3px solid #ccc;
+  font-family: sans-serif;
+}
+.profile img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile h1 {
   text-align: center;
+  padding: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 100px;
+}
+.profile p {
+  text-align: center;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-.icons {
+.link {
+  margin-top: 20px;
+  padding: 10px;
   text-align: center;
-}
-.icons i {
-  color: rgb(125, 125, 235);
-  padding: 0.8rem 1.5rem;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border: 3px solid #c5cbd2;
-  margin: 0 15px;
+  border-top: 1px solid #ccc;
+  background-color: #e5e5a3;
+  justify-content: center;
   transition: 1s;
 }
-.icons i:hover {
-  background-color: #07001f;
-  font-size: 1.6rem;
-  border: 2px solid rgb(125, 125, 235);
+.link a {
+  margin: 30px;
+  text-decoration: none;
+  color: #333;
 }
-
-.links {
-  display: flex;
-  justify-content: space-around;
-  padding: 0.4rem;
-  margin-top: 0.9rem;
-  font-weight: bold;
-}
-
-button {
-  color: rgb(123, 123, 221);
-  background-color: transparent;
-  border: none;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-button:hover {
-  text-decoration: underline;
-  color: blue;
+.link:hover {
+  background-color: rgb(175, 205, 6);
+  cursor: pointer;
 }
