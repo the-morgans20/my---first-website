@@ -1,4 +1,110 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(60, 1%, 65%);
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e5e5a3;
+}
+
+nav {
+  word-spacing: 50px;
+  text-align: center;
+  padding: 10px;
+}
+header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+nav a {
+  color: rgb(81, 95, 175);
+  text-decoration: none;
+}
+nav :hover {
+  color: blue;
+  text-decoration: underline;
+}
+nav i {
+  margin: 5px;
+  font-size: large;
+}
+.post-text-box sites {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 70px;
+  padding: 10px;
+}
+
+.post-text-box h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  text-transform: capitalize;
+}
+.post-text-box h2 {
+  font-family: Verdana;
+  padding-left: 25px;
+  text-align: justify;
+}
+.post-text-box p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 10px;
+}
+
+.profile {
+  float: right;
+  padding: 30px;
+  background-color: #f9f9f9;
+  width: 500px;
+  border: 3px solid #ccc;
+  font-family: sans-serif;
+}
+.profile img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile h1 {
+  text-align: center;
+  padding: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 100px;
+}
+.profile p {
+  text-align: center;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.link {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  background-color: #e5e5a3;
+  justify-content: center;
+  transition: 1s;
+}
+.link a {
+  margin: 30px;
+  text-decoration: none;
+  color: #333;
+}
+.link:hover {
+  background-color: rgb(175, 205, 6);
+  cursor: pointer;
 }
