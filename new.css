@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: turquoise;
+  background: linear-gradient(to left, rgb(4, 84, 76), #090174);
+}
+
+/* @media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 40px;
+  }
+} */
+.container {
+  background-color: rgba(237, 236, 243, 0.87);
+  position: relative;
+  left: 80px;
+  top: 80px;
+  width: 80%;
+  border-radius: 10px;
+  height: 1000px;
+  margin: 20px 20px;
+}
+form {
+  margin: 0 4rem;
+}
+
+.form-title {
+  font-size: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #06035f;
+}
+
+.input-group {
+  /* width: 400px; */
+  margin: 5px auto;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-group label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #06035f;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: inherit;
+  padding-left: 1.5em;
+  border: none;
+  /* background-color: transparent; */
+  /* margin-bottom: -15px; */
+}
+
+input::placeholder {
+  color: transparent;
+}
+.input-group i {
+  position: flex;
+  color: rgb(2, 2, 91);
+}
+
+label {
+  color: #757575;
+  position: relative;
+  left: 1.2em;
+  top: -2.5em;
+  cursor: auto;
+  transition: 0.5s ease all;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -5em;
+  color: hsl(248, 94%, 7%);
+  font: 15px;
+}
+
+.btn {
+  background-color: #0d038d;
+}
+.input-group .btn {
+  color: aliceblue;
+  padding: 10px;
+  margin: 10px;
+}
+.input-group .btn:hover {
+  background-color: #010110;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons i {
+  color: #0d038d;
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border: 3px solid #757575;
+  margin: 0 10px;
+  transition: 1s;
+}
+.icons :hover {
+  background-color: #010110;
+  font-size: 1.6rem;
+  border: 2px solid #0b0bbb;
+  color: aliceblue;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #0b0bbb;
+  color: #0b0bbb;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 10px;
+  margin-right: 5px;
+}
+button:hover {
+  background-color: #010110;
+  color: aliceblue;
+}

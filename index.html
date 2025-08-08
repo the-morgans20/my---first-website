@@ -3,125 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>register and form</title>
+    <title>drop down menu design</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container" id="signup">
-      <h1 class="form-title">Register</h1>
-      <form method="post" action="">
-        <div class="input-group">
-          <i class="fas fa-user"></i>
-          <input
-            type="text"
-            name="fname"
-            id="fname"
-            placeholder="First Name"
-            required
-          />
-          <label for="fname">First Name</label>
-        </div>
-        <div class="input-group">
-          <i class="fas fa-user"></i>
-          <input
-            type="text"
-            name="lname"
-            id="lname"
-            placeholder="Last Name"
-            required
-          />
-          <label for="lname">Last Name</label>
-        </div>
-        <div class="input-group">
-          <i class="fas fa-envelope"></i>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-          <label for="email">Email</label>
-        </div>
-        <div class="input-group">
-          <i class="fas fa-circle"></i>
-          <input
-            type="number"
-            name="number"
-            id="number"
-            placeholder="Phone Number"
-            required
-          />
-          <label for="number">Phone Number</label>
-        </div>
-        <div class="input-group">
-          <i class="fas fa-lock"></i>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-          <label for="password">Password</label>
-        </div>
-        <input type="submit" class="btn" value="sign Up" name="sign Up" />
-      </form>
-      <p class="or">-------------------or--------------------</p>
-      <div class="icons">
-        <i class="fab fa-google"></i>
-        <i class="fab fa-facebook"></i>
-      </div>
-      <div class="links">
-        <p>Already Have Account ?</p>
-        <button id="signInbutton">Sign In</button>
-      </div>
+    <div class="menu-bar">
+      <ul>
+        <li class="active">
+          <a href="#"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i>About us</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Brand Info</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Vision</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-clone"></i>Services</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">Marketing</a></li>
+              <li class="hover-me">
+                <a href="#">Mobile app</a><i class="fa fa-angle-right"></i>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="#">Android app</a></li>
+                    <li><a href="#">Iconic app</a></li>
+                    <li><a href="#">Ios app</a></li>
+                    <li><a href="#">flutter app</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="hover-me">
+                <a href="#">web development</a><i class="fa fa-sort-desc"></i>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="#">UX/UI Design</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                    <li><a href="#">Social media Graphis</a></li>
+                    <li><a href="#">Logo Design</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i>clients</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-angellist"></i>investors</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-inr"></i>Pricing</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-edit"></i>Traning</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">UX/UI Services</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-phone"></i>Contact us</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-phone-square"></i>08164334691</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
-
-    <div class="container" id="Login">
-      <h1 class="form-title">Login</h1>
-      <form method="post" action="">
-        <div class="input-group">
-          <i class="fas fa-envelope"></i>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-          />
-          <label for="email">Email</label>
-        </div>
-        <div class="input-group">
-          <i class="fas fa-lock"></i>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            require
-          />
-          <label for="password">Password</label>
-        </div>
-        <p class="Recover">
-          <a href="#">Recover Password</a>
-        </p>
-        <input type="submit" class="btn" value="sign In" name="sign In" />
-      </form>
-      <p class="or">-------------------or--------------------</p>
-      <div class="icons">
-        <i class="fab fa-google"></i>
-        <i class="fab fa-facebook"></i>
-      </div>
-      <div class="links">
-        <p>Don't Have Account ?</p>
-        <button id="signInbutton">Sign In</button>
-      </div>
-    </div>
-    <script src="script.js"></script>
   </body>
 </html>

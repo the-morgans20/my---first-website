@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(56, 1, 1);
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins, san-serif";
+  font-size: 16px;
+  line-height: 1.6em;
+  padding: 10px;
+}
+/* for tablet and larger screen */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+/* for destop and larger screen */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 40px;
+  }
+}
+h1 {
+  color: aliceblue;
+}
+span {
+  color: gold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.logo {
+  font-size: large;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: auto;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-bar .fa {
+  margin-right: 6px;
+}
+
+.menu-bar ul :hover {
+  color: goldenrod;
+}
+.drop-down {
+  display: none;
+}
+
+.container {
+  padding: 50px 50px;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20px;
+  color: whitesmoke;
+  word-spacing: 6px;
+  line-height: 1.8em;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  word-spacing: 20px;
+  text-align: center;
+  color: gold;
+}
+
+.container footer {
+  padding: 20px 20px;
+  margin-top: 6%;
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.container footer a {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 5px 10px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 1s ease all;
+}
+
+.container footer a:hover {
+  background-color: rgb(174, 149, 8);
+  color: black;
+}
+
+.container button {
+  color: #fff;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 5px 10px;
+  border: 2px solid #fff;
+  transition: 1s ease all;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(174, 149, 8);
+  color: black;
+}
+
+.menu-bar ul :hover .drop-down {
+  display: flex;
+  position: absolute;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+.menu-bar ul :hover .drop-down ul {
+  display: block;
+  margin: 5px;
+  padding: 10px 10px;
+}
